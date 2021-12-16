@@ -20,8 +20,21 @@
         <ListView 
             Grid.Column="0"
             Grid.Row="0"
-            Margin="10">
-            
+            Margin="10"
+            ItemsSource="{Binding ListaOsob}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn 
+                        DisplayMemberBinding="{Binding Imie}"
+                        Header="Imię"/>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Nazwisko}"
+                        Header="Nazwisko"/>
+                    <GridViewColumn
+                        DisplayMemberBinding="{Binding Telefon}"
+                        Header="Numer telefonu"/>
+                </GridView>
+            </ListView.View>
         </ListView>
         <UniformGrid 
             Grid.Row="0"

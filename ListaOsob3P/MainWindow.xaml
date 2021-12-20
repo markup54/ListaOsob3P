@@ -21,7 +21,8 @@
             Grid.Column="0"
             Grid.Row="0"
             Margin="10"
-            ItemsSource="{Binding ListaOsob}">
+            ItemsSource="{Binding ListaOsob}"
+            SelectedItem="{Binding wybranaOsoba}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn 
@@ -75,7 +76,7 @@
             Grid.ColumnSpan="2"
             Rows="1">
             <Button Margin="10">Dodaj</Button>
-            <Button Margin="10">Usuń</Button>
+            <Button Margin="10" Click="Button_Click">Usuń</Button>
             <Button Margin="10">Edytuj</Button>
         </UniformGrid>
     </Grid>

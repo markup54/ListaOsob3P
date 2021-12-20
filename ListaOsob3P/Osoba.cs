@@ -19,6 +19,11 @@ namespace ListaOsob3P
             Telefon = telefon;
         }
 
+        public override string ToString()
+        {
+            return "Imię "+Imie+" Nazwisko "+Nazwisko;
+        }
+
         public object Clone()
         {
             return MemberwiseClone();
